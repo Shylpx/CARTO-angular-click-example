@@ -1,0 +1,13 @@
+<div
+  *ngIf="popupInfo !== null"
+  #infoWindow
+  class="popup"
+  [ngStyle]="{'transform': 'translate(' + position[0] + 'px, ' + position[1] + 'px) translate(-50%, -100%)' }"
+>
+  <div class="popup-content">
+    <p>{{ popupInfo.propsObject.name }}</p>
+    <a [href]="'https://google.com/search?q=' + popupInfo.propsObject.name" target="_blank">
+      <button>Google search</button>
+    </a>
+  </div>
+</div>

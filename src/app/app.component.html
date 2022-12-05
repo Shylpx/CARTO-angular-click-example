@@ -1,4 +1,2 @@
-<div class="map-container">
-  <div #mapboxContainer></div>
-  <canvas #deckCanvas></canvas>
-</div>
+<app-map (popupInfoEmitter)="handlePopupInfoUpdate($event)" (positionEmitter)="handlePositionUpdate($event)"></app-map>
+<app-popup [position]="position" [popupInfo]="popupInfo"></app-popup>

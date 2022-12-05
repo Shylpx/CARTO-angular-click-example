@@ -1,0 +1,17 @@
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border: solid 2px black;
+  z-index: 1;
+
+  .popup-content {
+    padding: 2px 5px;
+    border-radius: 20px;
+
+    p {
+      line-height: 5px;
+    }
+  }
+}
